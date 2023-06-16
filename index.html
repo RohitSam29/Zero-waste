@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5c3c5c30d2.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="" type="image/x-icon"/>
+    <link rel="shortcut icon" href="src\images\logo3.png" type="image/x-icon"/>
+    <title>Zero waste</title>
+</head>
+<body>
+<!------------------------------HEADER--------------------------------------->
+    <div id="header">
+        <div class="container">
+            <Nav>
+                <img src="src\images\logo3.png" class="Logo" width = "100" height = "100"></img>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home </a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </Nav>
+            <div class="header-text">
+                    <h1>Be <br><span id="element"></span></h1>
+            </div>
+        </div>
+    </div>
+<!----------------------------------ABOUT------------------------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="src\images\user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"><span>About</span> Us</h1>
+                    <p>We are a group of 2nd year Btech CSE students of Tchno India University,West Bengal.
+                        we have acreated this web for the purpose of controling waste manegement more efficiently
+                        by the citizens.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('team')">Our Team</p>
+                        <p class="tab-links" onclick="opentab('roles')">Roles</p>
+                        <p class="tab-links" onclick="opentab('call')">Contact</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="team">
+                        <ul>
+                            <li><span>ROHIT SAMANTA</span><br> Education - BTECH CSE </li>
+                            <li><span>ANKAN ROY</span><br> Education - BTECH CSE  </li>
+                            <li><span>NILANJOY GHOSH</span><br> Education - BTECH CSE  </li>
+                            <li><span>SAQIB SAIN</span><br> Education - BTECH CSE  </li>
+                            <li><span>SABYASACHI GHOSH</span><br> Education - BTECH CSE  </li>
+                            <li><span>HARSHVARDHAN SINGH</span><br> Education - BTECH CSE  </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="roles">
+                        <ul>
+                            <li><span>ROHIT SAMANTA</span><br> developer and team leader </li>
+                            <li><span>ANKAN ROY</span><br> developer and head of marketing</li>
+                            <li><span>NILANJOY GHOSH</span><br> developer and in marketing</li>
+                            <li><span>SAQIB SAIN</span><br> developer and in marketing </li>
+                            <li><span>SABYASACHI GHOSH</span><br> developer and in marketing  </li>
+                            <li><span>HARSHVARDHAN SINGH</span><br> developer and in marketing </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="call">
+                        <ul>
+                            <li><span>ROHIT SAMANTA</span><br> rohit.samanta29@gmail.com</li>
+                            <li><span>ANKAN ROY</span><br>No Information</li>
+                            <li><span>NILANJOY GHOSH</span><br>@Nilanjoyghosh8258@gmail.com</li>
+                            <li><span>SAQIB SAIN</span><br>No Information</li>
+                            <li><span>SABYASACHI GHOSH</span><br> Sabyasachighosh273@gmail.com </li>
+                            <li><span>HARSHVARDHAN SINGH</span><br>No Information</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------------Services-------------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"><span>Our</span> Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-sharp fa-solid fa-flag"></i>
+                <h2>Report issues</h2>
+                <p>allow customers to report issues, provide feedback, or 
+                    submit necessary documentation online
+                </p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-recycle"></i>
+                <h2>Waste collection & recycle</h2>
+                <p>allow customers to send a alert to collect waste</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-book-open"></i>
+                <h2>Education & Awareness</h2>
+                <p>educational platform, providing resources and 
+                    <br>information about waste management practices</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!---------------------------CONTACT----------------------------------------->
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"><Span>Contact</Span> Us</h1>
+                    <a href="https://mail.google.com/mail"><i class="fa-sharp fa-solid fa-paper-plane"></i> rohit.samanta29@gmail.com</a>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> © 2023 All Rights Reserved.</p>
+        </div>
+    </div>
+
+<!---------------------------JAVA SCRIPT----------------------------------------->
+     <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+        }
+    
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: [" a recycler."," a saver."],
+      typeSpeed: 90,
+      backSpeed: 20,
+      loop:true
+    });
+  </script>
+<!----------------------------JAVA SCRIPT----------------------------------------->
+
+
+
+
+
+
+
+
+
+</body>
+</html>
